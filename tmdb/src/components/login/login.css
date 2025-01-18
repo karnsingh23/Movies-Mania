@@ -1,0 +1,99 @@
+/* Container styling */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #1a1a2e; /* Dark background color */
+    color: #eaeaea;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title styling */
+  .login-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Form styling */
+  .login-form {
+    background: #27293d; /* Dark card background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Input styling */
+  .login-input {
+    padding: 0.8rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #1e1e30; /* Darker input background */
+    color: #fff;
+    transition: border 0.3s;
+  }
+  
+  .login-input:focus {
+    outline: none;
+    border-color: #ff5722; /* Orange border on focus */
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+  }
+  
+  /* Button styling */
+  .login-button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5722;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #e64a19; /* Slightly darker orange on hover */
+  }
+  
+  /* Link styling */
+  .signup-link {
+    font-size: 0.9rem;
+    color: #aaa;
+    text-align: center;
+  }
+  
+  .signup-link a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 480px) {
+    .login-title {
+      font-size: 2rem;
+    }
+  
+    .login-form {
+      padding: 1.5rem;
+    }
+  
+    .login-input, .login-button {
+      font-size: 0.9rem;
+    }
+  }
+  

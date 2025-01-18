@@ -1,0 +1,137 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Roboto', Arial, sans-serif; /* Improved font */
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Restrict footer container width */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f9a825;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.footer-links,
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-links li,
+.footer-contact li {
+    margin-bottom: 8px;
+}
+
+.footer-links li a,
+.footer-contact li a {
+    color: #f9a825;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links li a:hover,
+.footer-contact li a:hover {
+    color: #fff;
+    transform: translateX(5px); /* Subtle hover effect */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #f9a825;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 26px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo {
+        font-size: 24px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
+.footer-message {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.footer-message a {
+    color: #f9a825;
+    text-decoration: none;
+}
+
+.footer-message a:hover {
+    color: #fff;
+}
+

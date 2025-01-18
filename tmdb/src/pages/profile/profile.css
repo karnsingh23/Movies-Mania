@@ -1,0 +1,152 @@
+/* General styling for profile container */
+.profile-cont {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section */
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Favorites button styling */
+.favorites-button {
+    padding: 12px 25px;
+    background-color: #74C0FC;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.favorites-button:hover {
+    background-color: #4c9fef;
+}
+
+/* Favorites list grid layout */
+.favorites-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Movie card styling */
+.movie-item {
+    display: flex; /* Flexbox for consistent layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Ensure button stays at the bottom */
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Consistent height for all cards */
+}
+
+.movie-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhance hover effect */
+}
+
+/* Movie image styling */
+.movie-image {
+    width: 100%;
+    height: 220px; /* Adjust image height */
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0; /* Subtle separator */
+}
+
+/* Movie details section */
+.movie-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow details to fill available space */
+}
+
+.movie-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.movie-runtime {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.movie-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: auto; /* Push button to the bottom */
+}
+
+/* Delete button styling */
+.movie-item button {
+    padding: 0.5rem 1rem;
+    background-color: #ff4d4d; /* Bright red for delete action */
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px; /* Consistent spacing from description */
+}
+
+.movie-item button:hover {
+    background-color: #e60000; /* Darker red on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.movie-item button:active {
+    background-color: #cc0000; /* Even darker red when clicked */
+    transform: scale(1); /* Reset zoom effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .favorites-button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .favorites-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .favorites-list {
+        grid-template-columns: 1fr;
+    }
+
+    .movie-title {
+        font-size: 18px;
+    }
+
+    .movie-runtime {
+        font-size: 12px;
+    }
+
+    .movie-description {
+        font-size: 12px;
+    }
+}
